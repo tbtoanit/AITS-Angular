@@ -1,0 +1,26 @@
+<app-navigation />
+<div>
+        <table>
+            <tr>
+                <div class="form-group mx-sm-3 mb-2">
+                    <input style=" margin-top: 30px" name="inputmoney" type="text"
+                        class="form-control" id="inputmoney" placeholder="input money">
+                </div>
+            </tr>
+            <tr>
+                <div class="form-group">
+                    <select name="currency" class="form-control" id="currency" (change)="currencyConvertChange()" required>
+                        <option>USD</option>
+                        <option>VND</option>
+                    </select>
+                </div>
+            </tr>
+            <tr>
+                <div class="form-group mx-sm-3 mb-2">
+                    <input style=" margin-top: 30px"  name="outputmoney"
+                        type="text" class="form-control" id="outputmoney" placeholder="output money">
+                </div>
+            </tr>
+        </table>
+</div>
+<app-footer />
